@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Geo
@@ -8,12 +8,12 @@
 Summary:	Geo::CountryFlags - methods to fetch flag GIFs
 Summary(pl):	Geo::CountryFlags - metody do uzyskiwania GIFów z flagami
 Name:		perl-Geo-CountryFlags
-Version:	0.01
+Version:	0.02
 Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	714b64ae9bdb2b224f086263c065bf71
+# Source0-md5:	2af4c15fbcaf211a1a71adc566e4718c
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -49,7 +49,7 @@ i zapisywaæ je w ./flags (domy¶lnie) lub wybranym katalogu.
 
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
