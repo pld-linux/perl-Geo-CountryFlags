@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Geo
-%define	pnam	CountryFlags
+%define		pdir	Geo
+%define		pnam	CountryFlags
 Summary:	Geo::CountryFlags - methods to fetch flag GIFs
 Summary(pl):	Geo::CountryFlags - metody do uzyskiwania GIFów z flagami
 Name:		perl-Geo-CountryFlags
