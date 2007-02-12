@@ -6,7 +6,7 @@
 %define		pdir	Geo
 %define		pnam	CountryFlags
 Summary:	Geo::CountryFlags - methods to fetch flag GIFs
-Summary(pl):	Geo::CountryFlags - metody do uzyskiwania GIFów z flagami
+Summary(pl.UTF-8):   Geo::CountryFlags - metody do uzyskiwania GIFÃ³w z flagami
 Name:		perl-Geo-CountryFlags
 Version:	0.02
 Release:	1
@@ -30,15 +30,15 @@ in the %{_datadir}/%{pdir}-%{pnam} directory. However, if LWP::Simple
 as needed and store them in ./flags [default] or the directory of you
 choice.
 
-%description -l pl
-Modu³ Geo::CountryFlags udostêpnia metody do wy¶wietlania/uzyskiwania
-GIFów z flagami ze strony WWW Central Intelligence Agency. Po
-¶ci±gniêciu flagi zachowuje j± lokalnie.
+%description -l pl.UTF-8
+ModuÅ‚ Geo::CountryFlags udostÄ™pnia metody do wyÅ›wietlania/uzyskiwania
+GIFÃ³w z flagami ze strony WWW Central Intelligence Agency. Po
+Å›ciÄ…gniÄ™ciu flagi zachowuje jÄ… lokalnie.
 
-Flagi wszystkich krajów z czasu wydania modu³u zosta³y za³±czone w
-katalogu %{_datadir}/%{pdir}-%{pnam}. Je¶li zainstalowany jest modu³
-LWP::Simple (pakiet perl-libwww), Geo::CountryFlags mo¿e ¶ci±gaæ flagi
-i zapisywaæ je w ./flags (domy¶lnie) lub wybranym katalogu.
+Flagi wszystkich krajÃ³w z czasu wydania moduÅ‚u zostaÅ‚y zaÅ‚Ä…czone w
+katalogu %{_datadir}/%{pdir}-%{pnam}. JeÅ›li zainstalowany jest moduÅ‚
+LWP::Simple (pakiet perl-libwww), Geo::CountryFlags moÅ¼e Å›ciÄ…gaÄ‡ flagi
+i zapisywaÄ‡ je w ./flags (domyÅ›lnie) lub wybranym katalogu.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
