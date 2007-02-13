@@ -6,7 +6,7 @@
 %define		pdir	Geo
 %define		pnam	CountryFlags
 Summary:	Geo::CountryFlags - methods to fetch flag GIFs
-Summary(pl.UTF-8):   Geo::CountryFlags - metody do uzyskiwania GIFów z flagami
+Summary(pl.UTF-8):	Geo::CountryFlags - metody do uzyskiwania GIFów z flagami
 Name:		perl-Geo-CountryFlags
 Version:	0.02
 Release:	1
