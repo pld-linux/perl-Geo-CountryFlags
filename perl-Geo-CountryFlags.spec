@@ -8,14 +8,18 @@
 Summary:	Geo::CountryFlags - methods to fetch flag GIFs
 Summary(pl.UTF-8):	Geo::CountryFlags - metody do uzyskiwania GIFów z flagami
 Name:		perl-Geo-CountryFlags
-Version:	0.02
-Release:	2
+Version:	1.01
+Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	2af4c15fbcaf211a1a71adc566e4718c
+# Source0-md5:	5e8e321b0e3ebdff99d2ade8fd53f4b2
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
+BuildRequires:	perl(File::SafeDO) >= 0.11
+BuildRequires:	perl-libwww
+%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -67,6 +71,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes
 %dir %{perl_vendorlib}/Geo
+%dir %{perl_vendorlib}/Geo/CountryFlags
 %{perl_vendorlib}/Geo/CountryFlags.pm
+%{perl_vendorlib}/Geo/CountryFlags/*.pm
 %{_datadir}/%{pdir}-%{pnam}
 %{_mandir}/man3/*
