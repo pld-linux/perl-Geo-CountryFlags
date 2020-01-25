@@ -4,7 +4,6 @@
 
 %define		pdir	Geo
 %define		pnam	CountryFlags
-%include	/usr/lib/rpm/macros.perl
 Summary:	Geo::CountryFlags - methods to fetch flag GIFs
 Summary(pl.UTF-8):	Geo::CountryFlags - metody do uzyskiwania GIFów z flagami
 Name:		perl-Geo-CountryFlags
